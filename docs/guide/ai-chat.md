@@ -103,7 +103,7 @@ async def call_tencent_bot_api(session: CommandSession, text: Optional[str]) -> 
 上面这段代码比较长，而且有一些新出现的函数和概念，我们后面会慢慢地详解，不过现在先登录腾讯云账户，进入「访问密钥」-「API密钥管理」页面，新建密钥得到 `SecretId` 和 `SecretKey`。
 
 :::warning 注意
-注册账号为用户主账号。由于本节内容需要使用腾讯云的密钥，若使用主账号泄露可能造成资产损失，因此建议参照 [最佳实践](https://cloud.tencent.com/document/product/598/10592) 停止使用主账号登录控制台或者使用主账号密钥访问云 API，建议使用子账号进行相关资源操作。建立子账号可以参考 [用户指南](https://cloud.tencent.com/document/product/598/13674)。
+注册账号为用户主账号。由于本节内容需要使用腾讯云的密钥，若主账号密钥泄露可能造成资产损失，因此建议参照 [最佳实践](https://cloud.tencent.com/document/product/598/10592) 停止使用主账号登录控制台或者使用主账号密钥访问云 API，建议使用子账号进行相关资源操作。建立子账号可以参考 [用户指南](https://cloud.tencent.com/document/product/598/13674)。
 :::
 
 然后在 `config.py` 中添加两行：
